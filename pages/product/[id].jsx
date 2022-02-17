@@ -16,7 +16,7 @@ const Product = ({ pizza }) => {
 
  
   const handleClick = () => {
-    dispatch(addProduct({...pizza, extras, price, quantity}));
+    dispatch(addProduct({...pizza, price, quantity}));
   };
 
   return (
@@ -55,7 +55,7 @@ const Product = ({ pizza }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `http://localhost:3000/api/products/${params.id}`
+    `https://food-display-api.herokuapp.com/products/${params.id}`
   );
   return {
     props: {

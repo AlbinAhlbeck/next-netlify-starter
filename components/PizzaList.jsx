@@ -18,7 +18,7 @@ const PizzaList = ({ pizzaList }) => {
       clearTimeout(timeoutRef.current);
     }
   }
-
+//<PizzaCard key={pizzaList[index]._id} pizza={pizzaList[index]} />
   useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(
@@ -42,7 +42,7 @@ const PizzaList = ({ pizzaList }) => {
       >
       </div>
           <div className = {styles.slide}>  
-            <PizzaCard key={pizzaList[index]._id} pizza={pizzaList[index]} />
+            
           </div>
         ))
       </div>

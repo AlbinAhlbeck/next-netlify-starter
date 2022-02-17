@@ -14,14 +14,6 @@ const Navbar = () => {
           <Image src="/img/title.webp" alt="" width="370px" height="85px" />
         </ul>
       </div>
-      <Link href="/cart" passHref>
-        <div className={styles.item}>
-          <div className={styles.cart}>
-            <Image src="/img/cart.jpg" alt=" " width="30px" height="30px" />
-            <div className={styles.counter}>{quantity}</div>
-          </div>
-        </div>
-      </Link>
     </div>
   );
 };
